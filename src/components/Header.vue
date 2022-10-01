@@ -69,9 +69,9 @@
         
     }
     @media only screen and (max-width: 600px) {
-  header {
+  /* header {
     display: none;
-  }
+  } */
 }
 
 </style>

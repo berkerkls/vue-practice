@@ -1,5 +1,5 @@
 <template>
-  <FirstStep />
+  <FinalPage />
 </template>
 
 <script>
@@ -8,12 +8,13 @@ import FirstStep from "./views/FirstStep.vue"
 import FinalPage from "./views/FinalPage.vue";
 
 
+
 export default {
   name: 'App',
   components: {
     Home,
     FirstStep,
-    FinalPage
+    FinalPage,
 }
 }
 </script>

@@ -104,6 +104,10 @@
    border: 1px solid cornflowerblue;
 }
 
+.button .btn-final:hover {
+    opacity: 0.5;
+}
+
 .button .btn-final i {
     margin-left: 10px;
 }
@@ -175,6 +179,16 @@ header {
         background-color: lightcyan;
         border-radius: 5px;
         
+    }
+    @media only screen and (max-width: 600px) { 
+        .final p {
+            text-align: center;
+        }
+
+        .final {
+            margin-top: 10px;
+        }
+
     }
 
 

@@ -260,4 +260,44 @@
         margin-left: 20px;
     }
 
+    @media only screen and (max-width: 600px) {
+  .sidebar {
+   display: none;
+  }
+
+  .img-circle {
+    display: none;
+  }
+
+  .general-settings{
+    display: flex;
+    flex-direction: column;
+  }
+
+    .general-settings .input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .general-settings .dollar-percentage .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .general-settings .dollar-percentage .inputs .and {
+        display:block;
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .general-settings .input .dollar-input .also {
+        display: none;
+    }
+}
+
 </style>

@@ -207,5 +207,30 @@ export default {
         margin-right: 20px;
     }
 
+    @media only screen and (max-width: 600px) {
+  .sidebar {
+   display: none;
+  }
+
+  .img-circle {
+    display: none;
+  }
+  .general-settings .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .general-settings .input input {
+    padding: 5px 50px;
+    margin-right: 20px;
+
+  }
+  .general-settings .input .percentage {
+    margin-left: 20px;
+  }
+}
+
 
 </style>

@@ -102,6 +102,19 @@ header {
         
     }
 
+    @media only screen and (max-width: 600px) {
+  /* .container-header {
+   display: none;
+  } */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 
 
 
