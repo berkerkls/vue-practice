@@ -1,11 +1,15 @@
-<template>
-  <FinalPage />
+<template> 
+    <router-view />
 </template>
 
 <script>
 import Home from "./views/Home.vue"
 import FirstStep from "./views/FirstStep.vue"
 import FinalPage from "./views/FinalPage.vue";
+import Buttons from "./components/Buttons.vue"
+
+
+
 
 
 
@@ -15,6 +19,7 @@ export default {
     Home,
     FirstStep,
     FinalPage,
+    Buttons,
 }
 }
 </script>

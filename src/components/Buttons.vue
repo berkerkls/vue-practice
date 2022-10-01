@@ -1,7 +1,11 @@
 <template>
     <div class="container">
-        <button class="btn-back"><i class="fa-solid fa-angle-left"></i>Önceki Adım</button>
-        <button class="btn-next">Sonraki Adım<i class="fa-solid fa-angle-right"></i></button>
+        <router-link to="/">
+            <button class="btn-back"><i class="fa-solid fa-angle-left"></i>Önceki Adım</button>
+        </router-link>
+        <router-link to="/firststep">
+            <button class="btn-next">Sonraki Adım<i class="fa-solid fa-angle-right"></i></button>
+        </router-link>
     </div>
 </template>
 
@@ -16,7 +20,7 @@
     .container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+       align-items: center;
     }
 
     .btn-back {
@@ -24,7 +28,7 @@
         border-radius: 5px;
         border: 1px solid #1919ff;
         background-color: transparent;
-        color: #1919ff;
+        color: #aed8e7;
         font-weight: bold;
         cursor: pointer;
     }

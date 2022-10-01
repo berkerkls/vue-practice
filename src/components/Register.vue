@@ -2,7 +2,7 @@
     <div class="container">
         <div class="circle-img">
             <div class="circle"></div>
-            <img src="https://cdn-0.emojis.wiki/emoji-pics/microsoft/laptop-microsoft.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/1098/1098657.png?w=740&t=st=1664656392~exp=1664656992~hmac=4388ff9b39a38391a3cffd59f2ffe412b5bdbfc28f917db3ad869a2b40fa7920" alt="">
         </div>
         <form class="register">
             <h1>Merhaba...</h1>
@@ -64,10 +64,10 @@
 }
 
 .circle-img .circle {
-    width: 500px;
+    width: 550px;
     height: 500px;
     border-radius: 51% 49% 53% 47% / 67% 63% 37% 33% ;
-    background-color: #c6dee6;
+    background-color: #c0e8f5;
     position: absolute;
     z-index: 1;
     opacity: 0.4;
@@ -76,8 +76,8 @@
 .circle-img img {
     height: 70%;
     z-index: 2;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     position: absolute;
     object-fit: cover;
 }
@@ -175,6 +175,10 @@ select.countries:focus {
   }
   .container {
     margin-top: 20px;
+  }
+
+  .register {
+    margin-left: 20px;
   }
 }
 

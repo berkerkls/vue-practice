@@ -31,7 +31,9 @@
                 </div>
             </div>
             <div class="button">
+                <router-link to="/">
                     <button class="btn"><i class="fa-solid fa-angle-left"></i>Önceki Adım</button>
+                </router-link>
                 </div>
         </div>
     </div>
@@ -50,6 +52,7 @@ export default {
     .container {
         display: flex;
         flex: 1;
+        margin-top: 2rem;
     }
 
     .sidebar {
@@ -89,6 +92,7 @@ export default {
         background-color: #fff;
         border: 1px solid blue;
         border-radius: 5px;
+        overflow: hidden;
     }
 
     .img-circle {

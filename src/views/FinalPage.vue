@@ -18,7 +18,9 @@
                 <p>Lorem ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.</p>
             </div>
             <div class="button">
-                <button class="btn-final">Ana Ekrana Git<i class="fa-solid fa-angle-right"></i></button>
+                <router-link to="/">
+                    <button class="btn-final">Ana Ekrana Git<i class="fa-solid fa-angle-right"></i></button>
+                </router-link>
                 <span>6 sn. sonra yönlendirileceksiniz.</span>
             </div>
         </div>
@@ -94,8 +96,7 @@
 }
 
 .button .btn-final {
-   width: 80%;
-   display: inline-block;
+   display: block;
    margin: auto;
    padding: 15px;
    border-radius: 5px;
@@ -187,6 +188,11 @@ header {
 
         .final {
             margin-top: 10px;
+        }
+
+        .button .btn-final {
+            display: block;
+            margin: auto;
         }
 
     }

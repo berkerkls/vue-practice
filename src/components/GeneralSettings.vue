@@ -3,7 +3,7 @@
         <div class="settings">
             <div class="img-circle">
                 <div class="circle"></div>
-                <img src="https://cdn-icons-png.flaticon.com/512/1116/1116982.png?w=740&t=st=1664561851~exp=1664562451~hmac=f826c6610ffe08ead9111d4d45bef47adcbbb459b52f3034d3a91461b39c788f" alt="box" >
+                <img src="https://cdn-icons-png.flaticon.com/512/1098/1098657.png?w=740&t=st=1664656392~exp=1664656992~hmac=4388ff9b39a38391a3cffd59f2ffe412b5bdbfc28f917db3ad869a2b40fa7920" alt="box" >
             </div>
             <div class="general-settings">
                 <h5>Genel Mağaza Ayarları<i class="fas fa-thin fa-gear"></i></h5>
@@ -38,7 +38,9 @@
                 </div>
 
                 <div class="button">
-                    <button class="button-next">Sonraki Adım<i class="fa-solid fa-angle-right"></i></button>
+                    <router-link to="/final">
+                        <button class="button-next">Sonraki Adım<i class="fa-solid fa-angle-right"></i></button>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -59,8 +61,8 @@
 .container {
         display: flex;
         flex: 1;
+        margin-top: 2rem;
     }
-
 
     .settings {
         flex: 4;
@@ -71,6 +73,7 @@
         background-color: #fff;
         border:none;
         border-radius: 5px;
+        overflow: hidden;
         width: 80%;
     }
 
@@ -84,6 +87,7 @@
 
     .general-settings {
         flex: 1;
+        margin-top: 3re;
     }
 
     .general-settings h5 {
@@ -95,14 +99,13 @@
     }
 
     .general-settings hr {
-        margin-bottom: 40px;
         width: 80%;
         margin: auto;
     }
 
     .general-settings p {
         width: 80%;
-        margin: 30px auto 0 auto;
+        margin: 10px auto 0 auto;
     }
 
     .general-settings i {
@@ -164,11 +167,6 @@
         border-bottom-left-radius: 0;
     }
     
-    .general-settings .check-discount {
-        width: 80%;
-        margin: auto;
-        margin-top: 50px;
-    }
     .general-settings .control input[type="checkbox"] {
         margin-right: 20px;
     }
