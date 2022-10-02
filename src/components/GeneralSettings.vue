@@ -13,7 +13,7 @@
                 <div class="input">
                     <div class="dollar-input">
                         <span class="dollar">$</span>
-                        <input type="text" placeholder="Input Text">
+                        <input type="number" placeholder="Enter amount">
                         <span class="also">veya</span>
                     </div>
                     <div class="automatic">
@@ -27,12 +27,12 @@
                     <div class="inputs">
                         <div class="percentage-side">
                             <span class="d-sign">%</span>
-                            <input type="text" placeholder="Input Text">
+                            <input type="number" placeholder="Enter percentage">
                             <span class="and">ve</span>
                         </div>
                         <div class="dollar-side">
                             <span class="p-sign">$</span>
-                            <input type="text" placeholder="Input Text">
+                            <input type="number" placeholder="Enter percentage">
                         </div>
                     </div>
                 </div>
@@ -258,6 +258,12 @@
         margin-left: 20px;
     }
 
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
     @media only screen and (max-width: 600px) {
   .sidebar {
    display: none;
@@ -267,9 +273,15 @@
     display: none;
   }
 
+  .settings {
+    width: 100%;
+    margin: 0;
+  }
+
   .general-settings{
     display: flex;
     flex-direction: column;
+
   }
 
     .general-settings .input {

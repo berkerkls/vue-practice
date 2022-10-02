@@ -44,7 +44,7 @@ header {
         align-items: center;
         background-color: #fff;
         color: #fff;
-        height: 80px;
+        height: 10vh;
     }
 
 .circle.selected {
@@ -114,8 +114,6 @@ header {
     align-items: center;
   }
 }
-
-
 
 
 </style>

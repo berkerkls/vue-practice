@@ -21,7 +21,7 @@
                 <p class="description">Ekstra vergi ortalaması</p>
                 <div class="input">
                     <span class="percentage">%</span>
-                    <input type="text" placeholder="Input Text">
+                    <input type="number" name="percentage" placeholder="Enter percentage">
                 </div>
                 <hr>
                 <div class="check-discount">
@@ -40,10 +40,23 @@
 </template>
 
 <script>
+import { useVuelidate } from '@vuelidate/core'
+import { required, between } from "@vuelidate/validators"
+
 export default {
     name: "UserSettings",
-    components: {
-        class:"user-settings"
+    setup: () => ({ v$: useVuelidate() }),
+    data() {
+        return {
+            percentage: 0
+        }
+    },
+    validations() {
+        return {
+            percentage : {
+                between: between(20, 90)
+            }
+        }
     }
 }
 </script>
@@ -53,6 +66,7 @@ export default {
         display: flex;
         flex: 1;
         margin-top: 2rem;
+        height: 80vh;
     }
 
     .sidebar {
@@ -161,6 +175,10 @@ export default {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
+
+    .general-settings .input input:focus {
+        outline: 0;
+    }
     
     .general-settings .check-discount {
         width: 80%;
@@ -210,6 +228,11 @@ export default {
     .button button i {
         margin-right: 20px;
     }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 
     @media only screen and (max-width: 600px) {
   .sidebar .nav-link ul {
@@ -218,11 +241,12 @@ export default {
    align-items: center;
   }
   .sidebar .nav-link ul li  {
-    margin-right: 10px;
-    width: 150px;
+    margin-right: 5px;
+    width: 130px;
     height: 40px;
     border: 1px solid #f5f5f5;
   }
+
 
   .img-circle {
     display: none;
