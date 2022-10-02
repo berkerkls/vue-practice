@@ -147,4 +147,25 @@
         
     }
 
+    @media only screen and (max-width: 600px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sidebar .nav-link ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar .nav-link ul li  {
+            margin-right: 5px;
+            width: 130px;
+            height: 30px;
+            border: 1px solid #f5f5f5;
+        }
+    }
+
 </style>

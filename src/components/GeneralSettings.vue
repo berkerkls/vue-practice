@@ -166,6 +166,10 @@
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
+
+    .general-settings .input input:focus {
+        outline: 0;
+    }
     
     .general-settings .control input[type="checkbox"] {
         margin-right: 20px;
@@ -190,12 +194,16 @@
         border-bottom-left-radius: 0;
     }
     .dollar-percentage .inputs .dollar-side input {
-        padding: 10px 20px;
+        padding: 10px 16px;
         border: 1px solid #c6dee6;
         border-radius: 5px;
         border-left: 0;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+    }
+    .dollar-percentage .inputs .percentage-side input:focus,
+    .dollar-percentage .inputs .dollar-side input:focus {
+        outline: 0;
     }
 
     .dollar-percentage .inputs .percentage-side .d-sign {
@@ -308,6 +316,8 @@
     .general-settings .input .dollar-input .also {
         display: none;
     }
+
+   
 }
 
 </style>
