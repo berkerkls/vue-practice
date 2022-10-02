@@ -2,12 +2,24 @@ import {createRouter, createWebHistory} from "vue-router"
 import Home from "../views/Home"
 import FirstStep from "../views/FirstStep"
 import FinalPage from "../views/FinalPage"
+import UltraPage from "../views/UltraPage"
+import ImprovedPage from "../views/ImprovedPage"
 
 const routes = [
     {
         path: "/",
         name: "Home",
         component: Home
+    },
+    {
+        path: "/ultra",
+        name: "Ultra",
+        component: UltraPage
+    },
+    {
+        path: "/improved",
+        name: "Improved",
+        component: ImprovedPage
     },
     {
         path: "/firststep",

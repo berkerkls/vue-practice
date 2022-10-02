@@ -18,8 +18,8 @@
                 <p>Lorem ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.</p>
             </div>
             <div class="button">
-                <router-link to="/">
-                    <button class="btn-final">Ana Ekrana Git<i class="fa-solid fa-angle-right"></i></button>
+                <router-link to="/" class="btn-final">
+                    Ana Ekrana Git<i class="fa-solid fa-angle-right"></i>
                 </router-link>
                 <span>6 sn. sonra yönlendirileceksiniz.</span>
             </div>
@@ -101,8 +101,9 @@
    padding: 15px;
    border-radius: 5px;
    color: #fff;
-   background-color: cornflowerblue;
-   border: 1px solid cornflowerblue;
+   background-color: #1919ff;
+   border: 1px solid #1919ff;
+   text-decoration: none;
 }
 
 .button .btn-final:hover {
@@ -112,6 +113,7 @@
 .button .btn-final i {
     margin-left: 10px;
 }
+
 
 .button span {
     color: #c6dee6;

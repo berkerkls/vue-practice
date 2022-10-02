@@ -3,9 +3,9 @@
         <div class="sidebar">
             <div class="nav-link">
                 <ul>
-                    <li><a href="#">Temel Ayarlar</a></li>
-                    <li><a href="#">Gelişmiş</a></li>
-                    <li><a href="#">Ultra</a></li>
+                    <li><router-link to="/firststep">Temel Ayarlar</router-link></li>
+                    <li><router-link to="/improved">Gelişmiş</router-link></li>
+                    <li><router-link to="/ultra">Ultra</router-link></li>
                 </ul>
             </div>
         </div>
@@ -75,7 +75,7 @@ export default {
         border-bottom-left-radius: 5px;
         background-color: #fff;
         padding: 5px;
-        border-right: none;
+        border-right: hidden;
         
     }
 
@@ -212,8 +212,16 @@ export default {
     }
 
     @media only screen and (max-width: 600px) {
-  .sidebar {
-   display: none;
+  .sidebar .nav-link ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+  .sidebar .nav-link ul li  {
+    margin-right: 10px;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #f5f5f5;
   }
 
   .img-circle {
